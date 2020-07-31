@@ -56,16 +56,17 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cal-x7-noF" userLabel="A3-1">
                                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="87"/>
                                                                         <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRC-Xg-keB">
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="190" borderStyle="roundedRect" placeholder="190 cm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRC-Xg-keB" customClass="CustomTextField" customModule="BodyMassIndex" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="47" width="144" height="34"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="34" id="mth-5o-Sqq"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
                                                                             </textField>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gauge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GGO-Fs-udw">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.and.down.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GGO-Fs-udw">
                                                                                 <rect key="frame" x="8" y="4" width="144" height="40"/>
+                                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,16 +83,17 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6if-xH-MAc" userLabel="A3-2">
                                                                         <rect key="frame" x="160" y="0.0" width="160" height="87"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.and.down.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TyV-gX-UVG">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gauge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TyV-gX-UVG">
                                                                                 <rect key="frame" x="8" y="4" width="144" height="40.5"/>
+                                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </imageView>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-UJ-1u9">
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="90" borderStyle="roundedRect" placeholder="90 kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-UJ-1u9" customClass="CustomTextField" customModule="BodyMassIndex" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="47" width="144" height="34"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="34" id="TVq-kh-scr"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
                                                                             </textField>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -180,6 +182,9 @@
                     </view>
                     <connections>
                         <outlet property="containerBmiWheel" destination="l8g-m2-REV" id="rvh-PN-eQc"/>
+                        <outlet property="height" destination="bRC-Xg-keB" id="a6V-Wb-NQA"/>
+                        <outlet property="mainTitle" destination="LFY-gG-guM" id="nyp-zT-elX"/>
+                        <outlet property="weight" destination="7qB-UJ-1u9" id="8KV-Zh-Cns"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

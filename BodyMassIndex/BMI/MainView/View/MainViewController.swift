@@ -12,22 +12,36 @@
 import UIKit
 
 class MainViewController: UIViewController {
+  @IBOutlet weak var mainTitle: UILabel!
+  @IBOutlet weak var weight: UITextField!
+  @IBOutlet weak var height: UITextField!
+  
   @IBOutlet weak var containerBmiWheel: UIView! // from SB
+  
   var bmiWheelView: BmiWheel! = BmiWheel(frame: CGRect.zero)
   
+  private var viewModelTopContainer = ViewModelTopContainer()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-    
-    
+    setupUIContainerTop()
   }
+  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     showBmiWheel()
   }
   
   // Setup first Container
+  fileprivate func setupUIContainerTop() {
+//    self.weight.text = viewModelTopContainer.myWeight == nil ? "" : String(viewModelTopContainer.myWeight)
+//    self.height.text = viewModelTopContainer.myHeight == nil ? "" : String(viewModelTopContainer.myHeight)
+    self.weight.text = viewModelTopContainer.myWeight == nil ? "90" : String(viewModelTopContainer.myWeight)
+    self.height.text = viewModelTopContainer.myHeight == nil ? "190" : String(viewModelTopContainer.myHeight)
+
+  }
+  
   // Setup second Container
   func showBmiWheel() {
     // build programmatically uiview
@@ -40,6 +54,29 @@ class MainViewController: UIViewController {
     containerBmiWheel.addSubview(bmiWheelView) // add it
   }
   // Setup last Container
+}
 
+
+
+
+
+
+extension MainViewController: UITextFieldDelegate {
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    view.endEditing(true)
+    // est pas vide alors
+    if (!(weight.text! == "") && !(height.text! == "")) {
+      print("1")
+      let imc = Cal.bmi(tall: Int(height.text!)!, weight: Float(weight.text!)!)
+      bmiWheelView.animationArrowWith(bmiValue: CGFloat(imc))
+      print(imc)
+    } else {
+      print("2")
+    }
+    
+  
+    
+  }
 }
 

@@ -38,6 +38,8 @@ class BmiWheel: UIView {
   private func initBmiWheel() {
     print("  💟 init bmi wheel 💟")
     buildRadianCircle()
+    makeMiddlePoint()
+    setPositionArrow()
   }
   private func buildRadianCircle() {
     makeRadianCircle(angleStart: .pi, angleEnd: 4 * .pi / 3, color: UIColor.circleBlue.cgColor)
@@ -297,7 +299,7 @@ class BmiWheel: UIView {
       
       containerNumber.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: containerLayer.frame.size.width, height: containerLayer.frame.size.height / 2))
       containerNumber.foregroundColor = UIColor.gray.cgColor
-      containerNumber.string = ""
+      containerNumber.string = "0.0"
       containerNumber.alignmentMode = .center
       containerLayer.addSublayer(containerNumber)
       
@@ -308,6 +310,11 @@ class BmiWheel: UIView {
       containerText.string = "BMI"
       containerLayer.addSublayer(containerText)
     }
+  private func makeMiddlePoint() {
+    let middleView = UIView(frame: CGRect(origin: centerPoint, size: CGSize(width: 5, height: 5)))
+    middleView.backgroundColor = UIColor.white
+    addSubview(middleView)
+  }
   
   // Animation
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

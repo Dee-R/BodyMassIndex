@@ -11,6 +11,10 @@
 		93A2F76624D4A40D002E4436 /* BmiWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F76524D4A40D002E4436 /* BmiWheel.swift */; };
 		93A2F76824D4BC80002E4436 /* DrawTextOnArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F76724D4BC80002E4436 /* DrawTextOnArc.swift */; };
 		93A2F76A24D4BFA6002E4436 /* CalculateNeedle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F76924D4BFA6002E4436 /* CalculateNeedle.swift */; };
+		93A2F76C24D4C6F4002E4436 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F76B24D4C6F4002E4436 /* ViewModel.swift */; };
+		93A2F76E24D4C779002E4436 /* ModelTopContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F76D24D4C779002E4436 /* ModelTopContainer.swift */; };
+		93A2F77024D4CA8B002E4436 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F76F24D4CA8B002E4436 /* Cal.swift */; };
+		93A2F77224D4D207002E4436 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F77124D4D207002E4436 /* CustomUITextField.swift */; };
 		93A31A9224D4588D0016C261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A31A9124D4588D0016C261 /* AppDelegate.swift */; };
 		93A31A9424D4588D0016C261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A31A9324D4588D0016C261 /* SceneDelegate.swift */; };
 		93A31A9624D4588D0016C261 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A31A9524D4588D0016C261 /* MainViewController.swift */; };
@@ -25,6 +29,10 @@
 		93A2F76524D4A40D002E4436 /* BmiWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiWheel.swift; sourceTree = "<group>"; };
 		93A2F76724D4BC80002E4436 /* DrawTextOnArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTextOnArc.swift; sourceTree = "<group>"; };
 		93A2F76924D4BFA6002E4436 /* CalculateNeedle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateNeedle.swift; sourceTree = "<group>"; };
+		93A2F76B24D4C6F4002E4436 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		93A2F76D24D4C779002E4436 /* ModelTopContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTopContainer.swift; sourceTree = "<group>"; };
+		93A2F76F24D4CA8B002E4436 /* Cal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
+		93A2F77124D4D207002E4436 /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		93A31A8E24D4588D0016C261 /* BodyMassIndex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyMassIndex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A31A9124D4588D0016C261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A31A9324D4588D0016C261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 		93A31AAB24D45B4E0016C261 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				93A2F76B24D4C6F4002E4436 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,6 +149,7 @@
 		93A31AAC24D45B550016C261 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				93A2F76D24D4C779002E4436 /* ModelTopContainer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +168,8 @@
 				93A2F76324D49FF5002E4436 /* CurveView.swift */,
 				93A2F76724D4BC80002E4436 /* DrawTextOnArc.swift */,
 				93A2F76924D4BFA6002E4436 /* CalculateNeedle.swift */,
+				93A2F76F24D4CA8B002E4436 /* Cal.swift */,
+				93A2F77124D4D207002E4436 /* CustomUITextField.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -234,11 +246,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A2F76824D4BC80002E4436 /* DrawTextOnArc.swift in Sources */,
+				93A2F76C24D4C6F4002E4436 /* ViewModel.swift in Sources */,
 				93A31A9624D4588D0016C261 /* MainViewController.swift in Sources */,
 				93A31A9224D4588D0016C261 /* AppDelegate.swift in Sources */,
+				93A2F77224D4D207002E4436 /* CustomUITextField.swift in Sources */,
 				93A2F76A24D4BFA6002E4436 /* CalculateNeedle.swift in Sources */,
+				93A2F76E24D4C779002E4436 /* ModelTopContainer.swift in Sources */,
 				93A31AB024D49B780016C261 /* GradientView.swift in Sources */,
 				93A2F76424D49FF5002E4436 /* CurveView.swift in Sources */,
+				93A2F77024D4CA8B002E4436 /* Cal.swift in Sources */,
 				93A2F76624D4A40D002E4436 /* BmiWheel.swift in Sources */,
 				93A31A9424D4588D0016C261 /* SceneDelegate.swift in Sources */,
 			);
