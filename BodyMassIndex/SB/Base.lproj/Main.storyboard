@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BodyMassIndex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="BodyMassIndex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,9 +125,20 @@
                                                     <constraint firstAttribute="bottom" secondItem="wlE-Fq-eq7" secondAttribute="bottom" id="xzQ-ad-72c"/>
                                                 </constraints>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QqD-EO-ae7" userLabel="ViewRadius">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QqD-EO-ae7" userLabel="viewRadius">
                                                 <rect key="frame" x="0.0" y="217.5" width="320" height="38"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdF-dR-Cv5" customClass="CurveView" customModule="BodyMassIndex" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="fdF-dR-Cv5" firstAttribute="top" secondItem="QqD-EO-ae7" secondAttribute="top" id="DjY-rL-wmj"/>
+                                                    <constraint firstItem="fdF-dR-Cv5" firstAttribute="leading" secondItem="QqD-EO-ae7" secondAttribute="leading" id="KXY-7g-KDa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fdF-dR-Cv5" secondAttribute="bottom" constant="35" id="eL6-ro-tSc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fdF-dR-Cv5" secondAttribute="trailing" id="iOz-wo-4kr"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -145,7 +156,6 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-m2-REV" userLabel="ViewB">
                                         <rect key="frame" x="0.0" y="255.5" width="320" height="170.5"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Px-lo-BlD" userLabel="ViewC">
                                         <rect key="frame" x="0.0" y="426" width="320" height="142"/>
@@ -168,6 +178,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="containerBmiWheel" destination="l8g-m2-REV" id="rvh-PN-eQc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
