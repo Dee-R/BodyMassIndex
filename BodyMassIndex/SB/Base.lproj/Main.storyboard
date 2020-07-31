@@ -33,12 +33,12 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BODY MASS INDEX" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="LFY-gG-guM" userLabel="Title">
                                                                 <rect key="frame" x="64" y="0.0" width="192" height="43.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="51"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" red="0.22352941179999999" green="0.81960784310000001" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="LFY-gG-guM" firstAttribute="centerX" secondItem="5AX-tO-6N0" secondAttribute="centerX" id="0d2-DG-I0t"/>
                                                             <constraint firstItem="LFY-gG-guM" firstAttribute="centerY" secondItem="5AX-tO-6N0" secondAttribute="centerY" id="Lve-kT-Iu5"/>
@@ -56,20 +56,21 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cal-x7-noF" userLabel="A3-1">
                                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="87"/>
                                                                         <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="190" borderStyle="roundedRect" placeholder="190 cm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRC-Xg-keB" customClass="CustomTextField" customModule="BodyMassIndex" customModuleProvider="target">
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="190" borderStyle="roundedRect" placeholder="190 cm" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bRC-Xg-keB" customClass="CustomTextField" customModule="BodyMassIndex" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="47" width="144" height="34"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="34" id="mth-5o-Sqq"/>
                                                                                 </constraints>
+                                                                                <color key="textColor" red="0.26444724200000003" green="0.77037686110000003" blue="0.91375482080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                                                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                             </textField>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.and.down.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GGO-Fs-udw">
                                                                                 <rect key="frame" x="8" y="4" width="144" height="40"/>
                                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </imageView>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.22352941179999999" green="0.81960784310000001" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstItem="GGO-Fs-udw" firstAttribute="top" secondItem="Cal-x7-noF" secondAttribute="top" constant="3.5" id="0mb-UD-dzW"/>
                                                                             <constraint firstItem="bRC-Xg-keB" firstAttribute="top" secondItem="GGO-Fs-udw" secondAttribute="bottom" constant="2.5" id="8hV-Pm-k9j"/>
@@ -87,16 +88,17 @@
                                                                                 <rect key="frame" x="8" y="4" width="144" height="40.5"/>
                                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </imageView>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="90" borderStyle="roundedRect" placeholder="90 kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-UJ-1u9" customClass="CustomTextField" customModule="BodyMassIndex" customModuleProvider="target">
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="90" borderStyle="roundedRect" placeholder="90 kg" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-UJ-1u9" customClass="CustomTextField" customModule="BodyMassIndex" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="47" width="144" height="34"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="34" id="TVq-kh-scr"/>
                                                                                 </constraints>
+                                                                                <color key="textColor" red="0.22352941179999999" green="0.81960784310000001" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                                                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                             </textField>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.22352941179999999" green="0.81960784310000001" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstItem="TyV-gX-UVG" firstAttribute="leading" secondItem="7qB-UJ-1u9" secondAttribute="leading" id="6Yx-Of-HJi"/>
                                                                             <constraint firstItem="TyV-gX-UVG" firstAttribute="leading" secondItem="6if-xH-MAc" secondAttribute="leadingMargin" id="Cdh-uw-tIx"/>
@@ -110,7 +112,6 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="TXE-v1-fCK" firstAttribute="top" secondItem="wlE-Fq-eq7" secondAttribute="top" id="O25-Zs-hik"/>
                                                             <constraint firstAttribute="bottom" secondItem="TXE-v1-fCK" secondAttribute="bottom" id="eSu-Gc-vIe"/>
@@ -132,7 +133,7 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdF-dR-Cv5" customClass="CurveView" customModule="BodyMassIndex" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" red="0.22352941176470587" green="0.81960784313725488" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -143,7 +144,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="QqD-EO-ae7" firstAttribute="top" secondItem="DJ1-bU-d9Q" secondAttribute="bottom" id="19D-A9-IKA"/>
                                             <constraint firstItem="QqD-EO-ae7" firstAttribute="leading" secondItem="e2d-Io-n6b" secondAttribute="leading" id="GiE-iY-sEV"/>
@@ -157,17 +158,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-m2-REV" userLabel="ViewB">
-                                        <rect key="frame" x="0.0" y="255.5" width="320" height="170.5"/>
+                                        <rect key="frame" x="0.0" y="255.5" width="320" height="148"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Px-lo-BlD" userLabel="ViewC">
-                                        <rect key="frame" x="0.0" y="426" width="320" height="142"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="403.5" width="320" height="164.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="e2d-Io-n6b" firstAttribute="height" secondItem="0mW-hq-0Ay" secondAttribute="height" multiplier="0.45" id="Nnv-9j-CML"/>
-                                    <constraint firstItem="l8g-m2-REV" firstAttribute="height" secondItem="0mW-hq-0Ay" secondAttribute="height" multiplier="0.3" id="pRi-v7-aGg"/>
+                                    <constraint firstItem="l8g-m2-REV" firstAttribute="height" secondItem="0mW-hq-0Ay" secondAttribute="height" multiplier="0.26" id="pRi-v7-aGg"/>
                                 </constraints>
                             </stackView>
                         </subviews>

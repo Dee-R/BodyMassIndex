@@ -317,10 +317,10 @@ class BmiWheel: UIView {
   }
   
   // Animation
-  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    print("began")
-    self.animationArrowWith(bmiValue: 25)
-  }
+//  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//    print("began")
+////    self.animationArrowWith(bmiValue: 25)
+//  }
   func animationArrowWith(bmiValue bmi: CGFloat) {
     let scalingArrowPositionByBMIvalue: CGFloat = CGFloat(CalculNeedle.calculAndScale(imc: Float(bmi))) // keep
     let newAngleFromBMI = .pi * ( scalingArrowPositionByBMIvalue - (90)) / 180
