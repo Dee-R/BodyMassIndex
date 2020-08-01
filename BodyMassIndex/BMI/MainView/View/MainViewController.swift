@@ -11,26 +11,35 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDelegate {
+//  ivar
+  private var viewModelTopContainer = ViewModelTopContainer()
   @IBOutlet weak var mainTitle: UILabel!
   @IBOutlet weak var weight: UITextField!
   @IBOutlet weak var height: UITextField!
-  
   @IBOutlet weak var containerBmiWheel: UIView! // from SB
-  
   var bmiWheelView: BmiWheel! = BmiWheel(frame: CGRect.zero)
+  @IBOutlet weak var containerBmiInfo: UIView!
+  @IBOutlet weak var tableView: UITableView!
   
-  private var viewModelTopContainer = ViewModelTopContainer()
-  
+  // MARK: - Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     setupUIContainerTop()
   }
-  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     showBmiWheel()
+  }
+  override func loadView() {
+    super.loadView()
+    setupTableView()
+  }
+  
+  
+  func setupTableView() {
+    tableView.dataSource = self
   }
   
   // Setup first Container
@@ -80,3 +89,26 @@ extension MainViewController: UITextFieldDelegate {
   }
 }
 
+extension MainViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 5
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   
+    let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! TableViewCellBmi
+    customCell.categorie.text = "categorie"
+    customCell.difference.text = "00.00"
+    return customCell
+  }
+  
+   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+         return "Section \(section)"
+     }
+  
+}
+
+class TableViewCellBmi: UITableViewCell {
+  @IBOutlet weak var categorie: UILabel!
+  @IBOutlet weak var difference: UILabel!
+}

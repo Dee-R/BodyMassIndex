@@ -100,7 +100,7 @@ class BmiWheel: UIView {
     let _: CGFloat = radians - (radians * 1/6)
     
     let configTextArc: [[String : Any]] = [
-      ["text" : "En Sous-Poids",
+      ["text" : "underweight",
        "radius": radians - (radians * 1/6) ,
        "angle" : 210,
        "centered" : true,
@@ -114,7 +114,7 @@ class BmiWheel: UIView {
        "txtColor" : UIColor.white,
        "txtSize": 19.0
       ],
-      ["text" : "En Surpoids",
+      ["text" : "Overweight",
        "radius": radians - (radians * 1/6),
        "angle" : 330,
        "centered" : true,
