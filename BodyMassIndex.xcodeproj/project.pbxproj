@@ -15,6 +15,8 @@
 		93A2F76E24D4C779002E4436 /* ModelTopContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F76D24D4C779002E4436 /* ModelTopContainer.swift */; };
 		93A2F77024D4CA8B002E4436 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F76F24D4CA8B002E4436 /* Cal.swift */; };
 		93A2F77224D4D207002E4436 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F77124D4D207002E4436 /* CustomUITextField.swift */; };
+		93A2F78A24D59AA1002E4436 /* BodyMassIndexDataInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F78924D59AA1002E4436 /* BodyMassIndexDataInfoTests.swift */; };
+		93A2F79224D59E50002E4436 /* SelectBmiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2F79124D59E50002E4436 /* SelectBmiInfo.swift */; };
 		93A31A9224D4588D0016C261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A31A9124D4588D0016C261 /* AppDelegate.swift */; };
 		93A31A9424D4588D0016C261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A31A9324D4588D0016C261 /* SceneDelegate.swift */; };
 		93A31A9624D4588D0016C261 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A31A9524D4588D0016C261 /* MainViewController.swift */; };
@@ -23,6 +25,16 @@
 		93A31A9E24D4588E0016C261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A31A9C24D4588E0016C261 /* LaunchScreen.storyboard */; };
 		93A31AB024D49B780016C261 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A31AAF24D49B780016C261 /* GradientView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93A2F78C24D59AA1002E4436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93A31A8624D4588D0016C261 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93A31A8D24D4588D0016C261;
+			remoteInfo = BodyMassIndex;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		93A2F76324D49FF5002E4436 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
@@ -33,6 +45,10 @@
 		93A2F76D24D4C779002E4436 /* ModelTopContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTopContainer.swift; sourceTree = "<group>"; };
 		93A2F76F24D4CA8B002E4436 /* Cal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
 		93A2F77124D4D207002E4436 /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
+		93A2F78724D59AA1002E4436 /* BodyMassIndexDataInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyMassIndexDataInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A2F78924D59AA1002E4436 /* BodyMassIndexDataInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexDataInfoTests.swift; sourceTree = "<group>"; };
+		93A2F78B24D59AA1002E4436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A2F79124D59E50002E4436 /* SelectBmiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBmiInfo.swift; sourceTree = "<group>"; };
 		93A31A8E24D4588D0016C261 /* BodyMassIndex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyMassIndex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A31A9124D4588D0016C261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A31A9324D4588D0016C261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		93A2F78424D59AA1002E4436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93A31A8B24D4588D0016C261 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +78,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93A2F78824D59AA1002E4436 /* BodyMassIndexDataInfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				93A2F78924D59AA1002E4436 /* BodyMassIndexDataInfoTests.swift */,
+				93A2F78B24D59AA1002E4436 /* Info.plist */,
+			);
+			path = BodyMassIndexDataInfoTests;
+			sourceTree = "<group>";
+		};
 		93A31A8524D4588D0016C261 = {
 			isa = PBXGroup;
 			children = (
 				93A31A9024D4588D0016C261 /* BodyMassIndex */,
+				93A2F78824D59AA1002E4436 /* BodyMassIndexDataInfoTests */,
 				93A31A8F24D4588D0016C261 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				93A31A8E24D4588D0016C261 /* BodyMassIndex.app */,
+				93A2F78724D59AA1002E4436 /* BodyMassIndexDataInfoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +204,7 @@
 				93A2F76924D4BFA6002E4436 /* CalculateNeedle.swift */,
 				93A2F76F24D4CA8B002E4436 /* Cal.swift */,
 				93A2F77124D4D207002E4436 /* CustomUITextField.swift */,
+				93A2F79124D59E50002E4436 /* SelectBmiInfo.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -177,6 +212,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		93A2F78624D59AA1002E4436 /* BodyMassIndexDataInfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93A2F78E24D59AA1002E4436 /* Build configuration list for PBXNativeTarget "BodyMassIndexDataInfoTests" */;
+			buildPhases = (
+				93A2F78324D59AA1002E4436 /* Sources */,
+				93A2F78424D59AA1002E4436 /* Frameworks */,
+				93A2F78524D59AA1002E4436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93A2F78D24D59AA1002E4436 /* PBXTargetDependency */,
+			);
+			name = BodyMassIndexDataInfoTests;
+			productName = BodyMassIndexDataInfoTests;
+			productReference = 93A2F78724D59AA1002E4436 /* BodyMassIndexDataInfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		93A31A8D24D4588D0016C261 /* BodyMassIndex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93A31AA224D4588E0016C261 /* Build configuration list for PBXNativeTarget "BodyMassIndex" */;
@@ -204,6 +257,10 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Eddy R";
 				TargetAttributes = {
+					93A2F78624D59AA1002E4436 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 93A31A8D24D4588D0016C261;
+					};
 					93A31A8D24D4588D0016C261 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -223,11 +280,19 @@
 			projectRoot = "";
 			targets = (
 				93A31A8D24D4588D0016C261 /* BodyMassIndex */,
+				93A2F78624D59AA1002E4436 /* BodyMassIndexDataInfoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		93A2F78524D59AA1002E4436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93A31A8C24D4588D0016C261 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +306,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		93A2F78324D59AA1002E4436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A2F78A24D59AA1002E4436 /* BodyMassIndexDataInfoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93A31A8A24D4588D0016C261 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +321,7 @@
 				93A2F76824D4BC80002E4436 /* DrawTextOnArc.swift in Sources */,
 				93A2F76C24D4C6F4002E4436 /* ViewModel.swift in Sources */,
 				93A31A9624D4588D0016C261 /* MainViewController.swift in Sources */,
+				93A2F79224D59E50002E4436 /* SelectBmiInfo.swift in Sources */,
 				93A31A9224D4588D0016C261 /* AppDelegate.swift in Sources */,
 				93A2F77224D4D207002E4436 /* CustomUITextField.swift in Sources */,
 				93A2F76A24D4BFA6002E4436 /* CalculateNeedle.swift in Sources */,
@@ -261,6 +335,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93A2F78D24D59AA1002E4436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93A31A8D24D4588D0016C261 /* BodyMassIndex */;
+			targetProxy = 93A2F78C24D59AA1002E4436 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		93A31A9724D4588D0016C261 /* Main.storyboard */ = {
@@ -282,6 +364,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		93A2F78F24D59AA1002E4436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BodyMassIndexDataInfoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Murphy.BodyMassIndexDataInfoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BodyMassIndex.app/BodyMassIndex";
+			};
+			name = Debug;
+		};
+		93A2F79024D59AA1002E4436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BodyMassIndexDataInfoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Murphy.BodyMassIndexDataInfoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BodyMassIndex.app/BodyMassIndex";
+			};
+			name = Release;
+		};
 		93A31AA024D4588E0016C261 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -409,7 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Murphy.BodyMassIndex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,13 +546,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Murphy.BodyMassIndex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		93A2F78E24D59AA1002E4436 /* Build configuration list for PBXNativeTarget "BodyMassIndexDataInfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93A2F78F24D59AA1002E4436 /* Debug */,
+				93A2F79024D59AA1002E4436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		93A31A8924D4588D0016C261 /* Build configuration list for PBXProject "BodyMassIndex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
