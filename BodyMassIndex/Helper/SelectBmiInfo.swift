@@ -43,8 +43,6 @@ class SelectBmiInfo {
     } else if (bmi >= 17.00) {
       return 2
     } else if (bmi >= 16.01) {
-      
-      print("getRightRowByCalculateBmi === 1")
       return 1
     }
     return 0

@@ -44,4 +44,3 @@ class GradientView: UIView {
         updateColors()
     }
 }
-
