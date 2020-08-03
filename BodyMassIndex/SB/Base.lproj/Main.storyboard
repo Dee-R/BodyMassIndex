@@ -26,7 +26,7 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGS-TN-21L" userLabel="A1">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
-                                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                        <color key="backgroundColor" red="0.25098039220000001" green="0.85098039219999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AX-tO-6N0" userLabel="A2">
                                                         <rect key="frame" x="0.0" y="87" width="320" height="43.5"/>
@@ -247,7 +247,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0mW-hq-0Ay" secondAttribute="trailing" id="UL1-xW-zzm"/>
                             <constraint firstItem="0mW-hq-0Ay" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i6c-yN-mWu"/>

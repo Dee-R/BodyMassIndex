@@ -55,6 +55,10 @@ class MainViewController: UIViewController, UITableViewDelegate {
   }
   
   // MARK: - Setup
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    .darkContent
+  }
+  
   fileprivate func setupTableView() {
     tableView.dataSource = self
   }
@@ -64,7 +68,7 @@ class MainViewController: UIViewController, UITableViewDelegate {
     self.weight.text = viewModelTopContainer.myWeight == nil ? "" : String(viewModelTopContainer.myWeight)
     self.height.text = viewModelTopContainer.myHeight == nil ? "" : String(viewModelTopContainer.myHeight)
   }
-  func setupUIContainerBottom() {
+  fileprivate func setupUIContainerBottom() {
     tableView.separatorStyle = .none
     tableView.isHidden = true
   }
@@ -121,4 +125,17 @@ extension MainViewController: UITableViewDataSource {
 class TableViewCellBmi: UITableViewCell {
   @IBOutlet weak var categorie: UILabel!
   @IBOutlet weak var difference: UILabel!
+}
+
+
+
+
+
+
+
+extension UIApplication {
+
+var statusBarView: UIView? {
+    return value(forKey: "statusBar") as? UIView
+   }
 }
