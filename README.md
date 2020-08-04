@@ -3,6 +3,9 @@ Body Mass Index calculator app for iOS devices using Swift 5, iOS 13.4, Xcode 11
 
 ![alt text](https://www.eddyrogier.com/static/media/Bmi-f4.d21f0640.png)
 
+[![Watch the video](https://project.getcode.fr/bmi/video.png)](https://project.getcode.fr/bmi/Bmi-v0.mp4)
+
+
 # How to use
 Just download source code and unzip the downloaded folder and open it in Xcode.
 #### Using Terminal:
