@@ -42,6 +42,7 @@ class MainViewController: UIViewController, UITableViewDelegate {
   // MARK: - Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    overrideUserInterfaceStyle = .light
     setupUIContainerTop()
     setupUIContainerBottom()
   }
