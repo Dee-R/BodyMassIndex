@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "right-star.png",
+      "filename" : "right-star-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "right-star-1.png",
+      "filename" : "right-star.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
