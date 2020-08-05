@@ -11,7 +11,6 @@ class Cal {
   static func bmi(tall:Int, weight: Float) -> Float {
     let textTall :String = String(tall)
     let countTall = textTall.count
-    
     var zeroUnit = "1"
     for _ in 1..<countTall{
       zeroUnit.append("0")

@@ -255,22 +255,12 @@ class BmiWheel: UIView {
       let text: NSAttributedString = NSAttributedString(string: configTextArc[i]["text"] as! String,
                                                         attributes: [NSAttributedString.Key.foregroundColor: configTextArc[i]["txtColor"] as! UIColor,
                                                                      NSAttributedString.Key.font: UIFont.systemFont(ofSize: CGFloat(configTextArc[i]["txtSize"] as! Double) )])
-      
       let _ = DrawTextOnArc(on: self.layer,
                             text: text,
                             angle: CGFloat(configTextArc[i]["angle"] as! Int),
                             radius: configTextArc[i]["radius"] as! CGFloat,
                             textCenter: configTextArc[i]["centered"] as! Bool )
     }
-    
-    
-    //    let text: NSAttributedString = NSAttributedString(string: "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45",
-    //    attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
-    //                  NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)])
-    //    let _ = DrawTextOnArc(on: self.layer,
-    //                  text: text,
-    //                  angle: 180,
-    //                  radius: radiusRadiansColored )
   }
   private func makeBmiTextLabel() {
       let mask = CAShapeLayer()
@@ -372,27 +362,8 @@ class BmiWheel: UIView {
       return 180
     }
     return 0
-    
-    //    if imc > 40 {
-    //      return 180
-    //    } else if (imc <= 40.0) {
-    //      let old = (imc - c[0]) / (c[1] - c[0])
-    //      let new = ((180 - 0) * old) + 0
-    //      return new
-    //    } else if (imc <= 25.0) {
-    //      let old = (imc - b[0]) / (b[1] - b[0])
-    //      let new = ((120 - 0) * old) + 0
-    //      return new
-    //    } else if (imc <= 18.5) {
-    //
-    //    } else {
-    //      return 0
-    //    }
   }
-
 }
-
-
 
 // custom Color
 extension UIColor {

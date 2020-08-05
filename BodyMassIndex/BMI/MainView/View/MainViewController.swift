@@ -128,12 +128,6 @@ class TableViewCellBmi: UITableViewCell {
   @IBOutlet weak var difference: UILabel!
 }
 
-
-
-
-
-
-
 extension UIApplication {
 
 var statusBarView: UIView? {

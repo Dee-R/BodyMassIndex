@@ -12,15 +12,11 @@ class DrawTextOnArc {
   init(on layer: CALayer, text: NSAttributedString = NSAttributedString(string: "This is a test string This is a test string This is a test string",attributes: [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)]), angle: CGFloat = 0, radius: CGFloat = 180, interSpaceLetter:CGFloat = 0, textCenter: Bool = false) {//    self.backgroundColor = UIColor.gray
         var radAngle = angle.radians// calcul radian angle
         let textSize = text.boundingRect(with: CGSize(width: .max, height: .max), options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil).integral.size // get size fo the string
-        
         let perimeter:CGFloat = 2 * .pi * (radius + interSpaceLetter) // perimeter of circle
-
         let align = textCenter ? CGFloat(2) : CGFloat(0)
         let textAngle: CGFloat = textSize.width / perimeter * align * .pi  // ✘
-        
         var textRotation: CGFloat = 0
         var textDirection: CGFloat = 0
-        
         if angle > CGFloat(10).radians, angle < CGFloat(170).radians {
           // bottom string
           textRotation = 0.5 * .pi
@@ -32,13 +28,10 @@ class DrawTextOnArc {
           textDirection = 2 * .pi
           radAngle -= textAngle / 2
         }
-        
-        
         // for on each character
         for c in 0..<text.length {
           let letter = text.attributedSubstring(from: NSRange(c..<c+1)) // identify each letter and keep it
           let charSize = letter.boundingRect(with: CGSize(width: .max, height: .max), options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil).integral.size // get size and other parameter for each characheter
-    
           // calcul angle for each letter
           let letterAngle = (charSize.width / perimeter) * textDirection
           let x = radius * cos(radAngle + (letterAngle / 2))
