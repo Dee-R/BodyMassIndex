@@ -14,7 +14,7 @@
 * [License](#license)
 
 ## Introduction
-BMI is just another iOS app that calculates your body mass index. You can simply calculate and assess your body mass with height and weight.
+BMI is just another iOS app that calculates your body mass index. You can simply calculate and access your body mass with height and weight.
 
 ![BMI](https://www.eddyrogier.com/static/media/Bmi-f4.d21f0640.png)
 ![BMI](https://www.eddyrogier.com/static/media/Bmi-f0.8e254dd8.jpg)
