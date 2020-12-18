@@ -31,11 +31,11 @@ The body mass index classifications are based on information from WHO.
 |------:|:---:|
 |< 16.00|Very below a normal weight|
 |16.00 - 16.99|below a normal weight|
-|17.00 < 18-49|insufficient weight|
-|18.50 < 25.00|normal weight|
-|25.01 < 29.90|overweight|
-|29.91 < 34.90|obesity class 1|
-|34.91 < 38.90|obesity class 2|
+|17.00 - 18-49|insufficient weight|
+|18.50 - 25.00|normal weight|
+|25.01 - 29.90|overweight|
+|29.91 - 34.90|obesity class 1|
+|34.91 - 38.90|obesity class 2|
 | > |obesity class 3|
 
 
