@@ -19,7 +19,7 @@ BMI is just another iOS app that calculates your body mass index. You can simply
 ![BMI](https://www.eddyrogier.com/static/media/Bmi-f4.d21f0640.png)
 ![BMI](https://www.eddyrogier.com/static/media/Bmi-f0.8e254dd8.jpg)
 ![BMI](https://www.eddyrogier.com/static/media/Bmi-f3.e677f988.jpg)
-[![Watch the video](https://project.getcode.fr/bmi/video.png)](https://project.getcode.fr/bmi/Bmi-v0.mp4)
+[![Watch the video](https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png)](https://project.getcode.fr/bmi/Bmi-v0.mp4)
 
 #### Your weight et your height.
 
